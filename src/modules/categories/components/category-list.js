@@ -1,4 +1,5 @@
 import React from 'react';
+import Category from '../containers/category-container';
 
 // Using "Stateless Functional Components"
 export default function(props) {
@@ -8,11 +9,7 @@ export default function(props) {
       {props.categories.map(category => {
 
         return (
-          <div key={category.id} className="data-list-item">
-            <div className="details">
-              <h2>{category.name}</h2>
-            </div>
-          </div>
+          <Category key={category.id} category={category} />
         );
 
       })}

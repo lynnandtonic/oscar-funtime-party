@@ -1,11 +1,17 @@
-import store from '../../../store';
 import firebase from 'firebase';
-import { categoryWasFetched } from '../actions';
+import { categoryWasFetched, fetchCategories } from '../actions';
 
 export function getCategories() {
-  this.firebaseRef = firebase.database().ref("categories");
-  this.firebaseRef.on("child_added", function(dataSnapshot) {
-    let category = dataSnapshot.val();
-    store.dispatch(categoryWasFetched(category));
-  });
+
+  return function(dispatch) {
+
+    dispatch(fetchCategories());
+    let firebaseRef = firebase.database().ref("categories");
+    firebaseRef.on("child_added", function(dataSnapshot) {
+      let category = dataSnapshot.val();
+      dispatch(categoryWasFetched(category));
+    });
+
+  };
+
 }

@@ -1,200 +1,233 @@
 {
   "categories": [
     {
-      "id": 0,
-      "name": "Best Picture"
+      "id": "0",
+      "name": "Best Picture",
+      "nominees": {
+        "lalaland": true
+      }
     },
     {
-      "id": 1,
-      "name": "Best Actor"
+      "id": "1",
+      "name": "Best Actor",
+      "nominees": {
+        "denzelwashington": true,
+        "ryangosling": true
+      }
     },
     {
-      "id": 2,
-      "name": "Best Actress"
+      "id": "2",
+      "name": "Best Actress",
+      "nominees": {
+        "amyadams": true,
+        "emmastone": true
+      }
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Best Actress in a Supporting Role"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Best Actor in a Supporting Role"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Best Director"
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Best Foreign Language Film"
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "Best Animated Feature Film"
     },
     {
-      "id": 8,
+      "id": "8",
       "name": "Best Original Screenplay"
     },
     {
-      "id": 9,
+      "id": "9",
       "name": "Best Writing Adapted Screenplay"
     },
     {
-      "id": 10,
+      "id": "10",
       "name": "Best Original Song"
     },
     {
-      "id": 11,
+      "id": "11",
       "name": "Best Original Music Score"
     },
     {
-      "id": 12,
+      "id": "12",
       "name": "Best Cinematography"
     },
     {
-      "id": 13,
+      "id": "13",
       "name": "Best Film Editing"
     },
     {
-      "id": 14,
+      "id": "14",
       "name": "Best Visual Effects"
     },
     {
-      "id": 15,
+      "id": "15",
       "name": "Best Short Film (Animated)"
     },
     {
-      "id": 16,
+      "id": "16",
       "name": "Best Documentary Feature"
     },
     {
-      "id": 17,
+      "id": "17",
       "name": "Best Costume Design"
     },
     {
-      "id": 18,
+      "id": "18",
       "name": "Best Production Design"
     },
     {
-      "id": 19,
+      "id": "19",
       "name": "Best Sound Mixing"
     },
     {
-      "id": 20,
+      "id": "20",
       "name": "Best Short Film (Live Action)"
     },
     {
-      "id": 21,
+      "id": "21",
       "name": "Best Sound Editing"
     },
     {
-      "id": 22,
+      "id": "22",
       "name": "Best Documentary Short Subject"
     },
     {
-      "id": 23,
+      "id": "23",
       "name": "Best Makeup and Hairstyling"
     },
     {
-      "id": 24,
+      "id": "24",
       "name": "Special Achievement Academy Award"
     },
     {
-      "id": 25,
+      "id": "25",
       "name": "Best Short Subject, Color"
     },
     {
-      "id": 26,
+      "id": "26",
       "name": "Best Dramatic Picture Direction"
     },
     {
-      "id": 27,
+      "id": "27",
       "name": "Best Assistant Director"
     },
     {
-      "id": 28,
+      "id": "28",
       "name": "Academy Juvenile Award"
     },
     {
-      "id": 29,
+      "id": "29",
       "name": "John A. Bonner Medal of Commendation"
     },
     {
-      "id": 30,
+      "id": "30",
       "name": "Irving G. Thalberg Memorial Award"
     },
     {
-      "id": 31,
+      "id": "31",
       "name": "Best Comedy Picture Direction"
     },
     {
-      "id": 32,
+      "id": "32",
       "name": "Best Cinematography, Black-and-White"
     },
     {
-      "id": 33,
+      "id": "33",
       "name": "Best Title Writing"
     },
     {
-      "id": 34,
+      "id": "34",
       "name": "Best Original Song Score"
     },
     {
-      "id": 35,
+      "id": "35",
       "name": "Best Unique and Artistic Picture"
     },
     {
-      "id": 36,
+      "id": "36",
       "name": "Best Costume Design, Black-and-White"
     },
     {
-      "id": 37,
+      "id": "37",
       "name": "Best Short Subject, One-reel"
     },
     {
-      "id": 38,
+      "id": "38",
       "name": "Best Dance Direction"
     },
     {
-      "id": 39,
+      "id": "39",
       "name": "Best Short Subject, Two-reel"
     },
     {
-      "id": 40,
+      "id": "40",
       "name": "Jean Hersholt Humanitarian Award"
     },
     {
-      "id": 41,
+      "id": "41",
       "name": "Best Short Subject, Comedy"
     },
     {
-      "id": 42,
+      "id": "42",
       "name": "Best Engineering Effects"
     },
     {
-      "id": 43,
+      "id": "43",
       "name": "Best Art Direction-Interior Decoration, Black-and-White"
     },
     {
-      "id": 44,
+      "id": "44",
       "name": "Best Original Musical or Comedy Score"
     },
     {
-      "id": 45,
+      "id": "45",
       "name": "Best Story"
     },
     {
-      "id": 46,
+      "id": "46",
       "name": "Best Original Musical"
     },
     {
-      "id": 47,
+      "id": "47",
       "name": "Best Story and Screenplay"
     },
     {
-      "id": 48,
+      "id": "48",
       "name": "Best Writing"
+    }
+  ],
+  "nominees": [
+    {
+      "id": "denzelwashingtop",
+      "name": "Denzel Washington"
+    },
+    {
+      "id": "lalaland",
+      "name": "La La Land"
+    },
+    {
+      "id": "emmastone",
+      "name": "Emma Stone"
+    },
+    {
+      "id": "amyadams",
+      "name": "Amy Adams"
+    },
+    {
+      "id": "ryangosling",
+      "name": "Ryan Gosling"
     }
   ]
 }

@@ -1,20 +1,12 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import ContainerList from '../views/category-list';
-import * as categoriesApi from '../api';
-// import ReactFireMixin from 'reactfire';
+import CategoryList from '../components/category-list';
 
 const CategoryListContainer = React.createClass({
 
-  // mixins: [ReactFireMixin],
-
-  componentDidMount: function() {
-    categoriesApi.getCategories();
-  },
-
   render: function() {
     return (
-      <ContainerList categories={this.props.categories} />
+      <CategoryList categories={this.props.categories} />
     );
   }
 
