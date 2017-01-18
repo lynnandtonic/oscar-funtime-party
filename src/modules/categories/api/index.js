@@ -5,7 +5,7 @@ export function getCategories() {
 
   return function(dispatch) {
 
-    dispatch(fetchCategories());
+    dispatch(fetchCategories);
     let firebaseRef = firebase.database().ref("categories");
     firebaseRef.on("child_added", function(dataSnapshot) {
       let category = dataSnapshot.val();
