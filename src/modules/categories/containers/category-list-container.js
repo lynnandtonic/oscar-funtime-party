@@ -17,7 +17,7 @@ const CategoryListContainer = React.createClass({
 
 });
 
-const mapStateToProps = function(store) {
+const mapStateToProps = (store) => {
   return {
     categories: store.categoryState.categories
   };

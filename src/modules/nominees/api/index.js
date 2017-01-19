@@ -1,9 +1,9 @@
 import firebase from 'firebase';
 import { nomineeWasFetched, fetchNominees } from '../actions';
 
-export function getNominees() {
+const getNominees = () => {
 
-  return function(dispatch) {
+  return (dispatch) => {
 
     dispatch(fetchNominees);
 
@@ -14,4 +14,6 @@ export function getNominees() {
     });
 
   };
-}
+};
+
+export default getNominees;

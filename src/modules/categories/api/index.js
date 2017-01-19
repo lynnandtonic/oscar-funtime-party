@@ -1,9 +1,9 @@
 import firebase from 'firebase';
 import { categoryWasFetched, fetchCategories } from '../actions';
 
-export function getCategories() {
+const getCategories = () => {
 
-  return function(dispatch) {
+  return (dispatch) => {
 
     dispatch(fetchCategories);
     let firebaseRef = firebase.database().ref("categories");
@@ -15,3 +15,5 @@ export function getCategories() {
   };
 
 }
+
+export default getCategories;

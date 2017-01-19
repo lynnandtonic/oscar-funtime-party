@@ -18,7 +18,7 @@ const CategoryContainer = React.createClass({
     selectedKey: PropTypes.string
   },
 
-  render: function() {
+  render: () => {
 
     return (
       <Category { ...this.props } onNomineeClicked={ this.onNomineeClicked } />
@@ -27,7 +27,7 @@ const CategoryContainer = React.createClass({
 
 });
 
-const mapStateToProps = function(store, ownProps) {
+const mapStateToProps = (store, ownProps) => {
   return {
     selectedKey: store.categoryState.selections[ownProps.category.id],
   };

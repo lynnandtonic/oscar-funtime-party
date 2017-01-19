@@ -4,7 +4,7 @@ const initialState = {
   nominees: []
 };
 
-const nomineeReducer = function(state = initialState, action) {
+const nomineeReducer = (state = initialState, action) => {
 
   switch(action.type) {
 

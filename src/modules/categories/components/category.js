@@ -3,7 +3,7 @@ import _ from 'lodash';
 import NomineeListContainer from '../../nominees/containers/nominee-list-container';
 
 // Using "Stateless Functional Components"
-export default function(props) {
+export default (props) => {
 
   let category = props.category;
 

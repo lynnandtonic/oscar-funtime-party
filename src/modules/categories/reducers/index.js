@@ -5,7 +5,7 @@ const initialState = {
   selections: {}
 };
 
-const userReducer = function(state = initialState, action) {
+const userReducer = (state = initialState, action) => {
 
   switch(action.type) {
 
