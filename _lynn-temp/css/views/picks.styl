@@ -1,0 +1,79 @@
+// ==========================================================================
+// Picks
+// ==========================================================================
+
+.picks
+  height: 100vh
+
+.category
+  padding: 20px 50px 50px
+
+  &:nth-child(1n)
+    background-image: linear-gradient(182deg, #444 150px, transparent 150px)
+
+  &:nth-child(2n)
+    background-image: linear-gradient(178deg, darken(darkturquoise,10%) 150px, transparent 150px)
+
+  &:nth-child(3n)
+    background-image: linear-gradient(182deg, mediumvioletred 150px, transparent 150px)
+
+.category-name
+  padding: 20px
+  color: white
+
+.nominee-list
+  display: flex
+  flex-wrap: wrap
+
+.nominee
+  width: 20%
+  padding: 20px 20px 15px
+  position: relative
+  font-size: 14px
+
+  &:before
+    position: absolute
+    text-align: center
+    line-height: 1
+    font-size: 11px
+    color: white
+    box-shadow: 0 2px 3px black(.2)
+
+  &:not(.pick):hover
+    background: black(.2)
+    cursor: pointer
+    
+    &:before
+      content: 'pick this'
+      width: 100px
+      padding: 10px
+      display: inline-block
+      left: 50%
+      top: 40%
+      margin-left: -(@width/2)
+      background: mediumvioletred(.85)
+      border-radius: 5px
+
+  &.pick
+    background: goldenrod
+    border-radius: 3px
+
+  &.pick:before
+    content: 'my pick'
+    width: 100%
+    padding: 10px 20px
+    display: block
+    left: 0
+    top: 30px
+    background-color: mediumvioletred
+  
+  &.winner
+    order: -1
+    background: blue
+
+.nominee-photo
+  width: 100%
+  box-shadow: 2px 2px 3px black(.2)
+
+.nominee-meta
+  font-size: 12px
