@@ -1,7 +1,8 @@
 import * as types from '../actions/types';
 
 const initialState = {
-  categories: []
+  categories: [],
+  selections: {}
 };
 
 const userReducer = function(state = initialState, action) {
@@ -10,6 +11,9 @@ const userReducer = function(state = initialState, action) {
 
     case types.CATEGORY_WAS_FETCHED:
       return { ...state, categories: [...state.categories, action.payload] };
+
+    case types.CATEGORY_WINNER_WAS_CHOSEN:
+      return { ...state, selections: { ...state.selections, ...action.payload } };
 
     default:
       return state;

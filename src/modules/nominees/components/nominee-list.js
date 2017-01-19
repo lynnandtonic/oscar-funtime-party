@@ -7,10 +7,8 @@ export default function(props) {
       {props.nominees.map(nominee => {
 
         return (
-          <div key={nominee.id} className="data-list-item">
-            <div className="controls">
-              <button onClick={() => props.onNomineeClicked(nominee.id)}>{nominee.name}</button>
-            </div>
+          <div key={nominee.id}>
+            <button className={ props.selectedKey === nominee.id ? 'active' : '' } onClick={() => props.onNomineeClicked(props.category, nominee.id)}>{nominee.name}</button>
           </div>
         );
 

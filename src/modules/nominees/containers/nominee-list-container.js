@@ -7,7 +7,9 @@ import _ from 'lodash';
 const CategoryListContainer = React.createClass({
 
   propTypes: {
-    nominees: PropTypes.arrayOf(NomineeModel).isRequired
+    nominees: PropTypes.arrayOf(NomineeModel).isRequired,
+    selectedKey: PropTypes.string,
+    onNomineeClicked: PropTypes.func.isRequired
   },
 
   render: function() {
@@ -25,7 +27,7 @@ const CategoryListContainer = React.createClass({
 
 const mapStateToProps = function(store) {
   return {
-    nominees: store.nomineeState.nominees
+    nominees: store.nomineeState.nominees,
   };
 };
 

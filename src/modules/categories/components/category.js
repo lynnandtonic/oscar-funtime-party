@@ -13,7 +13,7 @@ export default function(props) {
         <h2>{category.name}</h2>
       </div>
 
-      <NomineeListContainer keys={_.keys(category.nominees)} />
+      <NomineeListContainer { ...props } keys={_.keys(category.nominees)} />
     </div>
   )
 
