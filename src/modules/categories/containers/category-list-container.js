@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
 import CategoryList from '../components/category-list';
+import CategoryModel from '../models'
 
 const CategoryListContainer = React.createClass({
+
+  propTypes: {
+    categories: PropTypes.arrayOf(CategoryModel).isRequired
+  },
 
   render: function() {
     return (

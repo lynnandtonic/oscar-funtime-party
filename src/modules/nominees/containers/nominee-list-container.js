@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
+import NomineeModel from '../models';
 import NomineeList from '../components/nominee-list';
 import _ from 'lodash';
 
 const CategoryListContainer = React.createClass({
+
+  propTypes: {
+    nominees: PropTypes.arrayOf(NomineeModel).isRequired
+  },
 
   render: function() {
     let self = this;
@@ -12,7 +17,7 @@ const CategoryListContainer = React.createClass({
     });
 
     return (
-      <NomineeList nominees={nominees} />
+      <NomineeList { ...self.props } nominees={nominees} />
     );
   }
 
@@ -24,4 +29,6 @@ const mapStateToProps = function(store) {
   };
 };
 
-export default connect(mapStateToProps)(CategoryListContainer);
+export default connect(
+  mapStateToProps
+)(CategoryListContainer);

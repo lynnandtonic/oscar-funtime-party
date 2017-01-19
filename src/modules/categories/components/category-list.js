@@ -1,6 +1,6 @@
 import React from 'react';
 import _ from 'lodash';
-import NomineeListContainer from '../../nominees/containers/nominee-list-container';
+import CategoryContainer from '../containers/category-container';
 
 // Using "Stateless Functional Components"
 export default function(props) {
@@ -10,13 +10,7 @@ export default function(props) {
       {props.categories.map(category => {
 
         return (
-          <div key={category.id} className="data-list-item">
-            <div className="details">
-              <h2>{category.name}</h2>
-            </div>
-
-            <NomineeListContainer keys={_.keys(category.nominees)} />
-          </div>
+          <CategoryContainer key={category.id} category={category} />
         )
 
       })}
