@@ -1,7 +1,7 @@
 import firebase from 'firebase';
 import { categoryWasFetched, fetchCategories } from '../actions';
 
-const getCategories = () => {
+export function getCategories() {
 
   return (dispatch) => {
 
@@ -14,6 +14,4 @@ const getCategories = () => {
 
   };
 
-}
-
-export default getCategories;
+};

@@ -12,7 +12,7 @@ const CategoryListContainer = React.createClass({
     onNomineeClicked: PropTypes.func.isRequired
   },
 
-  render: () => {
+  render: function() {
     let self = this;
     let nominees = _.filter(this.props.nominees, function(n) {
       return _.includes(self.props.keys, n.id);

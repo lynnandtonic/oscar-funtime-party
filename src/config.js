@@ -1,6 +1,6 @@
 import firebase from 'firebase';
 
-export default () => {
+export function initializeDatasource () {
 
   firebase.initializeApp({
     apiKey: "AIzaSyBNcmcXQezVhhJDzY5Yi7xsvUAna499zxc",

@@ -18,7 +18,7 @@ const CategoryContainer = React.createClass({
     selectedKey: PropTypes.string
   },
 
-  render: () => {
+  render: function() {
 
     return (
       <Category { ...this.props } onNomineeClicked={ this.onNomineeClicked } />
