@@ -8,11 +8,8 @@ export default (props) => {
   let category = props.category;
 
   return (
-    <div key={category.id} className="data-list-item">
-      <div className="details">
-        <h2>{category.name}</h2>
-      </div>
-
+    <div key={category.id} className="category">
+      <h2 className="category-name">{category.name}</h2>
       <NomineeListContainer { ...props } keys={_.keys(category.nominees)} />
     </div>
   )

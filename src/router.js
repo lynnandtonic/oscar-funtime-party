@@ -10,6 +10,7 @@ export default (
   <Router history={browserHistory}>
     <Route component={MainLayout}>
       <Route path="/" component={CategoryListContainer} />
+      <Route path="/scoresheet" component={CategoryListContainer} />
     </Route>
   </Router>
 );

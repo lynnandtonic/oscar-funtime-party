@@ -4,7 +4,7 @@ import CategoryContainer from '../containers/category-container';
 // Using "Stateless Functional Components"
 export default (props) => {
   return (
-    <div className="data-list">
+    <section class="picks">
 
       {props.categories.map(category => {
 
@@ -14,6 +14,6 @@ export default (props) => {
 
       })}
 
-    </div>
+    </section>
   );
 }
