@@ -1,21 +1,22 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import CategoryList from '../components/category-list';
 import CategoryModel from '../models'
 
-const CategoryListContainer = React.createClass({
+class CategoryListContainer extends React.Component {
 
-  propTypes: {
-    categories: PropTypes.arrayOf(CategoryModel).isRequired
-  },
-
-  render: function() {
+  render() {
     return (
       <CategoryList categories={this.props.categories} />
     );
   }
 
-});
+}
+
+CategoryListContainer.propTypes = {
+  categories: PropTypes.objectOf(CategoryModel).isRequired
+};
 
 const mapStateToProps = (store) => {
   return {

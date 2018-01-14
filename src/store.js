@@ -1,4 +1,4 @@
-import { applyMiddleware, createStore } from 'redux';
+import { applyMiddleware, createStore, compose } from 'redux';
 import reducers from './rootReducer';
 import createLogger from 'redux-logger';
 import thunkMiddleware from 'redux-thunk';
@@ -9,13 +9,17 @@ import { initializeDatasource } from './config';
 initializeDatasource();
 
 const loggerMiddleware = createLogger();
-
-const store = createStore(
-  reducers,
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const enhancer = composeEnhancers(
   applyMiddleware(
     loggerMiddleware,
     thunkMiddleware
   )
+);
+
+const store = createStore(
+  reducers,
+  enhancer
 );
 
 store.dispatch(getCategories());

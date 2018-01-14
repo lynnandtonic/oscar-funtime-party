@@ -1,5 +1,5 @@
 import firebase from 'firebase';
-import { categoryWasFetched, fetchCategories } from '../actions';
+import { categoriesWereFetched, fetchCategories } from '../actions';
 
 export function getCategories() {
 
@@ -7,11 +7,11 @@ export function getCategories() {
 
     dispatch(fetchCategories);
     let firebaseRef = firebase.database().ref("categories");
-    firebaseRef.on("child_added", function(dataSnapshot) {
+    firebaseRef.on("value", function(dataSnapshot) {
       let category = dataSnapshot.val();
-      dispatch(categoryWasFetched(category));
+      dispatch(categoriesWereFetched(category));
     });
 
   };
 
-};
+}

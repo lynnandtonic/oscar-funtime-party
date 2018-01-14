@@ -2,18 +2,16 @@ import React from 'react';
 import CategoryContainer from '../containers/category-container';
 
 // Using "Stateless Functional Components"
-export default (props) => {
-  return (
-    <section class="picks">
+export default (props) => (
+  <section className="picks">
 
-      {props.categories.map(category => {
+    {Object.keys(props.categories).map(key => {
 
-        return (
-          <CategoryContainer key={category.id} category={category} />
-        )
+      return (
+        <CategoryContainer key={key} category={props.categories[key]} />
+      )
 
-      })}
+    })}
 
-    </section>
-  );
-}
+  </section>
+)

@@ -1,4 +1,4 @@
-import { PropTypes } from 'react';
+import PropTypes from 'prop-types';
 
 const Category = PropTypes.shape({
   id: PropTypes.string.isRequired,

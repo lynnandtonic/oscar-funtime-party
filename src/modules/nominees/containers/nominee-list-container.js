@@ -1,36 +1,22 @@
-import React, { PropTypes } from 'react';
-import { connect } from 'react-redux';
+import React from 'react';
+import PropTypes from 'prop-types';
 import NomineeModel from '../models';
 import NomineeList from '../components/nominee-list';
-import _ from 'lodash';
 
-const CategoryListContainer = React.createClass({
+class NomineeListContainer extends React.Component {
 
-  propTypes: {
-    nominees: PropTypes.arrayOf(NomineeModel).isRequired,
-    selectedKey: PropTypes.string,
-    onNomineeClicked: PropTypes.func.isRequired
-  },
-
-  render: function() {
-    let self = this;
-    let nominees = _.filter(this.props.nominees, function(n) {
-      return _.includes(self.props.keys, n.id);
-    });
-
+  render() {
     return (
-      <NomineeList { ...self.props } nominees={nominees} />
+      <NomineeList {...this.props} />
     );
   }
 
-});
+}
 
-const mapStateToProps = (store) => {
-  return {
-    nominees: store.nomineeState.nominees,
-  };
+NomineeListContainer.propTypes = {
+  nominees: PropTypes.arrayOf(NomineeModel).isRequired,
+  selectedKey: PropTypes.string,
+  onNomineeClicked: PropTypes.func.isRequired
 };
 
-export default connect(
-  mapStateToProps
-)(CategoryListContainer);
+export default NomineeListContainer;

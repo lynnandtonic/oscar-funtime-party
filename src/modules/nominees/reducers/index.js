@@ -1,15 +1,15 @@
 import * as types from '../actions/types';
 
 const initialState = {
-  nominees: []
+  nominees: {}
 };
 
 const nomineeReducer = (state = initialState, action) => {
 
   switch(action.type) {
 
-    case types.NOMINEE_WAS_FETCHED:
-      return { ...state, nominees: [...state.nominees, action.payload] };
+    case types.NOMINEES_WERE_FETCHED:
+      return { ...state, nominees: {...state.nominees, ...action.payload} };
 
     default:
       return state;

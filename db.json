@@ -1,233 +1,677 @@
 {
-  "categories": [
-    {
-      "id": "0",
+  "categories": {
+    "bestpicture": {
       "name": "Best Picture",
+      "id": "bestpicture",
       "nominees": {
+        "arrival": true,
+        "fences": true,
+        "hacksawridge": true,
+        "hellorhighwater": true,
+        "hiddenfigures": true,
+        "lalaland": true,
+        "lion": true,
+        "manchesterbythesea": true,
+        "moonlight": true
+      }
+    },
+    "actorinaleadingrole": {
+      "name": "Actor in a Leading Role",
+      "id": "actorinaleadingrole",
+      "nominees": {
+        "caseyaffleck": true,
+        "andrewgarfield": true,
+        "ryangosling": true,
+        "viggomortensen": true,
+        "denzelwashington": true
+      }
+    },
+    "actressinaleadingrole": {
+      "name": "Actress in a Leading Role",
+      "id": "actressinaleadingrole",
+      "nominees": {
+        "isabellehuppert": true,
+        "ruthnegga": true,
+        "natalieportman": true,
+        "emmastone": true,
+        "merylstreep": true
+      }
+    },
+    "actorinasupportingrole": {
+      "name": "Actor in a Supporting Role",
+      "id": "actorinasupportingrole",
+      "nominees": {
+        "mahershalaali": true,
+        "jeffbridges": true,
+        "lucashedges": true,
+        "devpatel": true,
+        "michaelshannon": true
+      }
+    },
+    "actressinasupportingrole": {
+      "name": "Actress in a Supporting Role",
+      "id": "actressinasupportingrole",
+      "nominees": {
+        "violadavis": true,
+        "naomieharris": true,
+        "nicolekidman": true,
+        "octaviaspencer": true,
+        "michellewilliams": true
+      }
+    },
+    "animatedfeaturefilm": {
+      "name": "Animated Feature Film",
+      "id": "animatedfeaturefilm",
+      "nominees": {
+        "kuboandthetwostrings": true,
+        "moana": true,
+        "mylifeasazucchini": true,
+        "theredturtle": true,
+        "zootopia": true
+      }
+    },
+    "cinematography": {
+      "name": "Cinematography",
+      "id": "cinematography",
+      "nominees": {
+        "arrival": true,
+        "lalaland": true,
+        "lion": true,
+        "moonlight": true,
+        "silence": true
+      }
+    },
+    "costumedesign": {
+      "name": "Costume Design",
+      "id": "costumedesign",
+      "nominees": {
+        "allied": true,
+        "fantasticbeastsandwheretofindthem": true,
+        "florencefosterjenkins": true,
+        "jackie": true,
         "lalaland": true
       }
     },
-    {
-      "id": "1",
-      "name": "Best Actor",
+    "directing": {
+      "name": "Directing",
+      "id": "directing",
       "nominees": {
-        "denzelwashington": true,
-        "ryangosling": true
+        "arrival": true,
+        "hacksawridge": true,
+        "lalaland": true,
+        "manchesterbythesea": true,
+        "moonlight": true
       }
     },
-    {
-      "id": "2",
-      "name": "Best Actress",
+    "documentaryfeature": {
+      "name": "Documentary (Feature)",
+      "id": "documentaryfeature",
       "nominees": {
-        "amyadams": true,
-        "emmastone": true
+        "fireatsea": true,
+        "iamnotyournegro": true,
+        "lifeanimated": true,
+        "ojmadeinamerica": true,
+        "13th": true
       }
     },
-    {
-      "id": "3",
-      "name": "Best Actress in a Supporting Role"
+    "documentaryshortsubject": {
+      "name": "Documentary (Short Subject)",
+      "id": "documentaryshortsubject",
+      "nominees": {
+        "extremis": true,
+        "41miles": true,
+        "joesviolin": true,
+        "watanimyhomeland": true,
+        "thewhitehelmets": true
+      }
     },
-    {
-      "id": "4",
-      "name": "Best Actor in a Supporting Role"
+    "filmediting": {
+      "name": "Film Editing",
+      "id": "filmediting",
+      "nominees": {
+        "arrival": true,
+        "hacksawridge": true,
+        "hellorhighwater": true,
+        "lalaland": true,
+        "moonlight": true
+      }
     },
-    {
-      "id": "5",
-      "name": "Best Director"
+    "foreignlanguagefilm": {
+      "name": "Foreign Language Film",
+      "id": "foreignlanguagefilm",
+      "nominees": {
+        "landofmine": true,
+        "amancalledove": true,
+        "thesalesman": true,
+        "tanna": true,
+        "tonierdmann": true
+      }
     },
-    {
-      "id": "6",
-      "name": "Best Foreign Language Film"
+    "makeupandhairstyling": {
+      "name": "Makeup and Hairstyling",
+      "id": "makeupandhairstyling",
+      "nominees": {
+        "amancalledove": true,
+        "startrekbeyond": true,
+        "suicidesquad": true
+      }
     },
-    {
-      "id": "7",
-      "name": "Best Animated Feature Film"
+    "musicoriginalscore": {
+      "name": "Music (Original Score)",
+      "id": "musicoriginalscore",
+      "nominees": {
+        "jackie": true,
+        "lalaland": true,
+        "lion": true,
+        "moonlight": true,
+        "passengers": true
+      }
     },
-    {
-      "id": "8",
-      "name": "Best Original Screenplay"
+    "musicoriginalsong": {
+      "name": "Music (Original Song)",
+      "id": "musicoriginalsong",
+      "nominees": {
+        "\"auditionthefoolswhodream\"-lalaland": true,
+        "\"cantstopthefeeling\"-trolls": true,
+        "\"cityofstars\"-lalaland": true,
+        "\"theemptychair\"-jimthejamesfoleystory": true,
+        "\"howfarillgo\"-moana": true
+      }
     },
-    {
-      "id": "9",
-      "name": "Best Writing Adapted Screenplay"
+    "productiondesign": {
+      "name": "Production Design",
+      "id": "productiondesign",
+      "nominees": {
+        "arrival": true,
+        "fantasticbeastsandwheretofindthem": true,
+        "hailcaesar!": true,
+        "lalaland": true,
+        "passengers": true
+      }
     },
-    {
-      "id": "10",
-      "name": "Best Original Song"
+    "shortfilmanimated": {
+      "name": "Short Film (Animated)",
+      "id": "shortfilmanimated",
+      "nominees": {
+        "blindvaysha": true,
+        "borrowedtime": true,
+        "pearciderandcigarettes": true,
+        "pearl": true,
+        "piper": true
+      }
     },
-    {
-      "id": "11",
-      "name": "Best Original Music Score"
+    "shortfilmliveaction": {
+      "name": "Short Film (Live Action)",
+      "id": "shortfilmliveaction",
+      "nominees": {
+        "ennemisintérieurs": true,
+        "lafemmeetletgv": true,
+        "silentnights": true,
+        "sing": true,
+        "timecode": true
+      }
     },
-    {
-      "id": "12",
-      "name": "Best Cinematography"
+    "soundediting": {
+      "name": "Sound Editing",
+      "id": "soundediting",
+      "nominees": {
+        "arrival": true,
+        "deepwaterhorizon": true,
+        "hacksawridge": true,
+        "lalaland": true,
+        "sully": true
+      }
     },
-    {
-      "id": "13",
-      "name": "Best Film Editing"
+    "soundmixing": {
+      "name": "Sound Mixing",
+      "id": "soundmixing",
+      "nominees": {
+        "arrival": true,
+        "hacksawridge": true,
+        "lalaland": true,
+        "rogueoneastarwarsstory": true,
+        "13hoursthesecretsoldiersofbenghazi": true
+      }
     },
-    {
-      "id": "14",
-      "name": "Best Visual Effects"
+    "visualeffects": {
+      "name": "Visual Effects",
+      "id": "visualeffects",
+      "nominees": {
+        "deepwaterhorizon": true,
+        "doctorstrange": true,
+        "thejunglebook": true,
+        "kuboandthetwostrings": true,
+        "rogueoneastarwarsstory": true
+      }
     },
-    {
-      "id": "15",
-      "name": "Best Short Film (Animated)"
+    "writingadaptedscreenplay": {
+      "name": "Writing (Adapted Screenplay)",
+      "id": "writingadaptedscreenplay",
+      "nominees": {
+        "arrival": true,
+        "fences": true,
+        "hiddenfigures": true,
+        "lion": true,
+        "moonlight": true
+      }
     },
-    {
-      "id": "16",
-      "name": "Best Documentary Feature"
-    },
-    {
-      "id": "17",
-      "name": "Best Costume Design"
-    },
-    {
-      "id": "18",
-      "name": "Best Production Design"
-    },
-    {
-      "id": "19",
-      "name": "Best Sound Mixing"
-    },
-    {
-      "id": "20",
-      "name": "Best Short Film (Live Action)"
-    },
-    {
-      "id": "21",
-      "name": "Best Sound Editing"
-    },
-    {
-      "id": "22",
-      "name": "Best Documentary Short Subject"
-    },
-    {
-      "id": "23",
-      "name": "Best Makeup and Hairstyling"
-    },
-    {
-      "id": "24",
-      "name": "Special Achievement Academy Award"
-    },
-    {
-      "id": "25",
-      "name": "Best Short Subject, Color"
-    },
-    {
-      "id": "26",
-      "name": "Best Dramatic Picture Direction"
-    },
-    {
-      "id": "27",
-      "name": "Best Assistant Director"
-    },
-    {
-      "id": "28",
-      "name": "Academy Juvenile Award"
-    },
-    {
-      "id": "29",
-      "name": "John A. Bonner Medal of Commendation"
-    },
-    {
-      "id": "30",
-      "name": "Irving G. Thalberg Memorial Award"
-    },
-    {
-      "id": "31",
-      "name": "Best Comedy Picture Direction"
-    },
-    {
-      "id": "32",
-      "name": "Best Cinematography, Black-and-White"
-    },
-    {
-      "id": "33",
-      "name": "Best Title Writing"
-    },
-    {
-      "id": "34",
-      "name": "Best Original Song Score"
-    },
-    {
-      "id": "35",
-      "name": "Best Unique and Artistic Picture"
-    },
-    {
-      "id": "36",
-      "name": "Best Costume Design, Black-and-White"
-    },
-    {
-      "id": "37",
-      "name": "Best Short Subject, One-reel"
-    },
-    {
-      "id": "38",
-      "name": "Best Dance Direction"
-    },
-    {
-      "id": "39",
-      "name": "Best Short Subject, Two-reel"
-    },
-    {
-      "id": "40",
-      "name": "Jean Hersholt Humanitarian Award"
-    },
-    {
-      "id": "41",
-      "name": "Best Short Subject, Comedy"
-    },
-    {
-      "id": "42",
-      "name": "Best Engineering Effects"
-    },
-    {
-      "id": "43",
-      "name": "Best Art Direction-Interior Decoration, Black-and-White"
-    },
-    {
-      "id": "44",
-      "name": "Best Original Musical or Comedy Score"
-    },
-    {
-      "id": "45",
-      "name": "Best Story"
-    },
-    {
-      "id": "46",
-      "name": "Best Original Musical"
-    },
-    {
-      "id": "47",
-      "name": "Best Story and Screenplay"
-    },
-    {
-      "id": "48",
-      "name": "Best Writing"
+    "writingoriginalscreenplay": {
+      "name": "Writing (Original Screenplay)",
+      "id": "writingoriginalscreenplay",
+      "nominees": {
+        "hellorhighwater": true,
+        "lalaland": true,
+        "thelobster": true,
+        "manchesterbythesea": true,
+        "20thcenturywomen": true
+      }
     }
-  ],
-  "nominees": [
-    {
-      "id": "denzelwashingtop",
-      "name": "Denzel Washington"
+  },
+  "nominees": {
+    "arrival": {
+      "id": "arrival",
+      "name": "Arrival",
+      "metadata": "Screenplay by Eric Heisserer"
     },
-    {
+    "fences": {
+      "id": "fences",
+      "name": "Fences",
+      "metadata": "Screenplay by August Wilson\r\n"
+    },
+    "hacksawridge": {
+      "id": "hacksawridge",
+      "name": "Hacksaw Ridge",
+      "metadata": "Kevin O'Connell, Andy Wright, Robert Mackenzie and Peter Grace"
+    },
+    "hellorhighwater": {
+      "id": "hellorhighwater",
+      "name": "Hell or High Water",
+      "metadata": "Written by Taylor Sheridan\r\n"
+    },
+    "hiddenfigures": {
+      "id": "hiddenfigures",
+      "name": "Hidden Figures",
+      "metadata": "Screenplay by Allison Schroeder and Theodore Melfi\r\n"
+    },
+    "lalaland": {
       "id": "lalaland",
-      "name": "La La Land"
+      "name": "La La Land",
+      "metadata": "Written by Damien Chazelle\r\n"
     },
-    {
-      "id": "emmastone",
-      "name": "Emma Stone"
+    "lion": {
+      "id": "lion",
+      "name": "Lion",
+      "metadata": "Screenplay by Luke Davies\r\n"
     },
-    {
-      "id": "amyadams",
-      "name": "Amy Adams"
+    "manchesterbythesea": {
+      "id": "manchesterbythesea",
+      "name": "Manchester by the Sea",
+      "metadata": "Written by Kenneth Lonergan"
     },
-    {
+    "moonlight": {
+      "id": "moonlight",
+      "name": "Moonlight",
+      "metadata": "Screenplay by Barry Jenkins; Story by Tarell Alvin McCraney\r\n"
+    },
+    "caseyaffleck": {
+      "id": "caseyaffleck",
+      "name": "Casey Affleck",
+      "metadata": "Manchester by the Sea"
+    },
+    "andrewgarfield": {
+      "id": "andrewgarfield",
+      "name": "Andrew Garfield",
+      "metadata": "Hacksaw Ridge"
+    },
+    "ryangosling": {
       "id": "ryangosling",
-      "name": "Ryan Gosling"
+      "name": "Ryan Gosling",
+      "metadata": "La La Land"
+    },
+    "viggomortensen": {
+      "id": "viggomortensen",
+      "name": "Viggo Mortensen",
+      "metadata": "Captain Fantastic"
+    },
+    "denzelwashington": {
+      "id": "denzelwashington",
+      "name": "Denzel Washington",
+      "metadata": "Fences"
+    },
+    "isabellehuppert": {
+      "id": "isabellehuppert",
+      "name": "Isabelle Huppert",
+      "metadata": "Elle"
+    },
+    "ruthnegga": {
+      "id": "ruthnegga",
+      "name": "Ruth Negga",
+      "metadata": "Loving"
+    },
+    "natalieportman": {
+      "id": "natalieportman",
+      "name": "Natalie Portman",
+      "metadata": "Jackie"
+    },
+    "emmastone": {
+      "id": "emmastone",
+      "name": "Emma Stone",
+      "metadata": "La La Land"
+    },
+    "merylstreep": {
+      "id": "merylstreep",
+      "name": "Meryl Streep",
+      "metadata": "Florence Foster Jenkins"
+    },
+    "mahershalaali": {
+      "id": "mahershalaali",
+      "name": "Mahershala Ali",
+      "metadata": "Moonlight"
+    },
+    "jeffbridges": {
+      "id": "jeffbridges",
+      "name": "Jeff Bridges",
+      "metadata": "Hell or High Water"
+    },
+    "lucashedges": {
+      "id": "lucashedges",
+      "name": "Lucas Hedges",
+      "metadata": "Manchester by the Sea"
+    },
+    "devpatel": {
+      "id": "devpatel",
+      "name": "Dev Patel",
+      "metadata": "Lion"
+    },
+    "michaelshannon": {
+      "id": "michaelshannon",
+      "name": "Michael Shannon",
+      "metadata": "Nocturnal Animals"
+    },
+    "violadavis": {
+      "id": "violadavis",
+      "name": "Viola Davis",
+      "metadata": "Fences"
+    },
+    "naomieharris": {
+      "id": "naomieharris",
+      "name": "Naomie Harris",
+      "metadata": "Moonlight"
+    },
+    "nicolekidman": {
+      "id": "nicolekidman",
+      "name": "Nicole Kidman",
+      "metadata": "Lion"
+    },
+    "octaviaspencer": {
+      "id": "octaviaspencer",
+      "name": "Octavia Spencer",
+      "metadata": "Hidden Figures"
+    },
+    "michellewilliams": {
+      "id": "michellewilliams",
+      "name": "Michelle Williams",
+      "metadata": "Manchester by the Sea"
+    },
+    "kuboandthetwostrings": {
+      "id": "kuboandthetwostrings",
+      "name": "Kubo and the Two Strings",
+      "metadata": "Steve Emerson, Oliver Jones, Brian McLean and Brad Schiff"
+    },
+    "moana": {
+      "id": "moana",
+      "name": "Moana",
+      "metadata": "John Musker, Ron Clements and Osnat Shurer"
+    },
+    "mylifeasazucchini": {
+      "id": "mylifeasazucchini",
+      "name": "My Life as a Zucchini",
+      "metadata": "Claude Barras and Max Karli"
+    },
+    "theredturtle": {
+      "id": "theredturtle",
+      "name": "The Red Turtle",
+      "metadata": "Michael Dudok de Wit and Toshio Suzuki"
+    },
+    "zootopia": {
+      "id": "zootopia",
+      "name": "Zootopia",
+      "metadata": "Byron Howard, Rich Moore and Clark Spencer"
+    },
+    "silence": {
+      "id": "silence",
+      "name": "Silence",
+      "metadata": "Rodrigo Prieto"
+    },
+    "allied": {
+      "id": "allied",
+      "name": "Allied",
+      "metadata": "Joanna Johnston"
+    },
+    "fantasticbeastsandwheretofindthem": {
+      "id": "fantasticbeastsandwheretofindthem",
+      "name": "Fantastic Beasts and Where to Find Them",
+      "metadata": "Stuart Craig (Production Design); Anna Pinnock (Set Decoration)\r\n"
+    },
+    "florencefosterjenkins": {
+      "id": "florencefosterjenkins",
+      "name": "Florence Foster Jenkins",
+      "metadata": "Consolata Boyle"
+    },
+    "jackie": {
+      "id": "jackie",
+      "name": "Jackie",
+      "metadata": "Mica Levi"
+    },
+    "fireatsea": {
+      "id": "fireatsea",
+      "name": "Fire at Sea",
+      "metadata": "Gianfranco Rosi and Donatella Palermo"
+    },
+    "iamnotyournegro": {
+      "id": "iamnotyournegro",
+      "name": "I Am Not Your Negro",
+      "metadata": "Raoul Peck, Rémi Grellety and Hébert Peck"
+    },
+    "lifeanimated": {
+      "id": "lifeanimated",
+      "name": "Life, Animated",
+      "metadata": "Roger Ross Williams and Julie Goldman"
+    },
+    "ojmadeinamerica": {
+      "id": "ojmadeinamerica",
+      "name": "O.J.: Made in America",
+      "metadata": "Ezra Edelman and Caroline Waterlow"
+    },
+    "13th": {
+      "id": "13th",
+      "name": "13th",
+      "metadata": "Ava DuVernay, Spencer Averick and Howard Barish"
+    },
+    "extremis": {
+      "id": "extremis",
+      "name": "Extremis",
+      "metadata": "Dan Krauss"
+    },
+    "41miles": {
+      "id": "41miles",
+      "name": "4.1 Miles",
+      "metadata": "Daphne Matziaraki"
+    },
+    "joesviolin": {
+      "id": "joesviolin",
+      "name": "Joe's Violin",
+      "metadata": "Kahane Cooperman and Raphaela Neihausen "
+    },
+    "watanimyhomeland": {
+      "id": "watanimyhomeland",
+      "name": "Watani: My Homeland",
+      "metadata": "Marcel Mettelsiefen and Stephen Ellis"
+    },
+    "thewhitehelmets": {
+      "id": "thewhitehelmets",
+      "name": "The White Helmets",
+      "metadata": "Orlando von Einsiedel and Joanna Natasegara"
+    },
+    "landofmine": {
+      "id": "landofmine",
+      "name": "Land of Mine",
+      "metadata": "Denmark; Directed by Martin Zandvliet"
+    },
+    "amancalledove": {
+      "id": "amancalledove",
+      "name": "A Man Called Ove",
+      "metadata": "Eva von Bahr and Love Larson"
+    },
+    "thesalesman": {
+      "id": "thesalesman",
+      "name": "The Salesman",
+      "metadata": "Iran; Directed by Asghar Farhadi"
+    },
+    "tanna": {
+      "id": "tanna",
+      "name": "Tanna",
+      "metadata": "Australia; Directed by Bentley Dean and Martin Butler"
+    },
+    "tonierdmann": {
+      "id": "tonierdmann",
+      "name": "Toni Erdmann",
+      "metadata": "Germany; Directed by Maren Ade"
+    },
+    "startrekbeyond": {
+      "id": "startrekbeyond",
+      "name": "Star Trek Beyond",
+      "metadata": "Joel Harlow and Richard Alonzo"
+    },
+    "suicidesquad": {
+      "id": "suicidesquad",
+      "name": "Suicide Squad",
+      "metadata": "Alessandro Bertolazzi, Giorgio Gregorini and Christopher Nelson"
+    },
+    "passengers": {
+      "id": "passengers",
+      "name": "Passengers",
+      "metadata": "Guy Hendrix Dyas (Production Design); Gene Serdena (Set Decoration)\r\n"
+    },
+    "\"auditionthefoolswhodream\"-lalaland": {
+      "id": "\"auditionthefoolswhodream\"-lalaland",
+      "name": "\"Audition (The Fools Who Dream)\" - La La Land",
+      "metadata": "Music by Justin Hurwitz; Lyric by Benj Pasek and Justin Paul"
+    },
+    "\"cantstopthefeeling\"-trolls": {
+      "id": "\"cantstopthefeeling\"-trolls",
+      "name": "\"Can't Stop The Feeling\" - Trolls",
+      "metadata": "Music and Lyric by Justin Timberlake, Max Martin and Karl Johan Schuster"
+    },
+    "\"cityofstars\"-lalaland": {
+      "id": "\"cityofstars\"-lalaland",
+      "name": "\"City Of Stars\" - La La Land",
+      "metadata": "Music by Justin Hurwitz; Lyric by Benj Pasek and Justin Paul"
+    },
+    "\"theemptychair\"-jimthejamesfoleystory": {
+      "id": "\"theemptychair\"-jimthejamesfoleystory",
+      "name": "\"The Empty Chair\" - Jim: The James Foley Story",
+      "metadata": "Music and Lyric by J. Ralph and Sting"
+    },
+    "\"howfarillgo\"-moana": {
+      "id": "\"howfarillgo\"-moana",
+      "name": "\"How Far I'll Go\" - Moana",
+      "metadata": "Music and Lyric by Lin-Manuel Miranda"
+    },
+    "hailcaesar!": {
+      "id": "hailcaesar!",
+      "name": "Hail, Caesar!",
+      "metadata": "Jess Gonchor (Production Design); Nancy Haigh (Set Decoration)\r\n"
+    },
+    "blindvaysha": {
+      "id": "blindvaysha",
+      "name": "Blind Vaysha",
+      "metadata": "Theodore Ushev"
+    },
+    "borrowedtime": {
+      "id": "borrowedtime",
+      "name": "Borrowed Time",
+      "metadata": "Andrew Coats and Lou Hamou-Lhadj"
+    },
+    "pearciderandcigarettes": {
+      "id": "pearciderandcigarettes",
+      "name": "Pear Cider and Cigarettes",
+      "metadata": "Robert Valley and Cara Speller"
+    },
+    "pearl": {
+      "id": "pearl",
+      "name": "Pearl",
+      "metadata": "Patrick Osborne"
+    },
+    "piper": {
+      "id": "piper",
+      "name": "Piper",
+      "metadata": "Alan Barillaro and Marc Sondheimer"
+    },
+    "ennemisintérieurs": {
+      "id": "ennemisintérieurs",
+      "name": "Ennemis Intérieurs",
+      "metadata": "Sélim Azzazi"
+    },
+    "lafemmeetletgv": {
+      "id": "lafemmeetletgv",
+      "name": "La Femme et le TGV",
+      "metadata": "Timo von Gunten and Giacun Caduff"
+    },
+    "silentnights": {
+      "id": "silentnights",
+      "name": "Silent Nights",
+      "metadata": "Aske Bang and Kim Magnusson"
+    },
+    "sing": {
+      "id": "sing",
+      "name": "Sing",
+      "metadata": "Kristof Deák and Anna Udvardy"
+    },
+    "timecode": {
+      "id": "timecode",
+      "name": "Timecode",
+      "metadata": "Juanjo Giménez"
+    },
+    "deepwaterhorizon": {
+      "id": "deepwaterhorizon",
+      "name": "Deepwater Horizon",
+      "metadata": "Craig Hammack, Jason Snell, Jason Billington and Burt Dalton"
+    },
+    "sully": {
+      "id": "sully",
+      "name": "Sully",
+      "metadata": "Alan Robert Murray and Bub Asman"
+    },
+    "rogueoneastarwarsstory": {
+      "id": "rogueoneastarwarsstory",
+      "name": "Rogue One: A Star Wars Story",
+      "metadata": "John Knoll, Mohen Leo, Hal Hickel and Neil Corbould"
+    },
+    "13hoursthesecretsoldiersofbenghazi": {
+      "id": "13hoursthesecretsoldiersofbenghazi",
+      "name": "13 Hours: The Secret Soldiers of Benghazi",
+      "metadata": "Greg P. Russell, Gary Summers, Jeffrey J. Haboush and Mac Ruth"
+    },
+    "doctorstrange": {
+      "id": "doctorstrange",
+      "name": "Doctor Strange",
+      "metadata": "Stephane Ceretti, Richard Bluff, Vincent Cirelli and Paul Corbould"
+    },
+    "thejunglebook": {
+      "id": "thejunglebook",
+      "name": "The Jungle Book",
+      "metadata": "Robert Legato, Adam Valdez, Andrew R. Jones and Dan Lemmon"
+    },
+    "thelobster": {
+      "id": "thelobster",
+      "name": "The Lobster",
+      "metadata": "Written by Yorgos Lanthimos, Efthimis Filippou\r\n"
+    },
+    "20thcenturywomen": {
+      "id": "20thcenturywomen",
+      "name": "20th Century Women",
+      "metadata": "Written by Mike Mills\r\n"
     }
-  ]
+  }
 }

@@ -1,8 +1,8 @@
-import { PropTypes } from 'react';
+import PropTypes from 'prop-types';
 
 const Nominee = PropTypes.shape({
   id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired
-}).isRequired
+}).isRequired;
 
 export default Nominee;
