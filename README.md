@@ -6,4 +6,4 @@ oscarfuntime.party
 * Install node_modules via ```yarn```
 
 ## Run
-```npm start```
+```yarn start```
