@@ -2,13 +2,7 @@ import React from 'react';
 import { Switch, Route, Redirect, NavLink } from 'react-router-dom'
 import MyPicksPage from '../pages/MyPicks';
 import ScoreSheetPage from '../pages/ScoreSheet';
-
-const UserProfile = () => (
-  <div className="user">
-    <img src="https://pbs.twimg.com/profile_images/477556215401025537/zH_q0-_s.png" className="user-avatar" role="presentation" />
-    <div className="user-name">@lynnandtonic</div>
-  </div>
-);
+import UserProfile from '../modules/user/containers/UserProfile';
 
 const MainLayout = () => (
 

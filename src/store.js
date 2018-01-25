@@ -4,9 +4,7 @@ import createLogger from 'redux-logger';
 import thunkMiddleware from 'redux-thunk';
 import { getCategories } from './modules/categories/api';
 import { getNominees } from './modules/nominees/api';
-import { initializeDatasource } from './config';
-
-initializeDatasource();
+import firebase, { auth, provider } from './firebase.js';
 
 const loggerMiddleware = createLogger();
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
