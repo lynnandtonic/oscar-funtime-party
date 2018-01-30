@@ -1,22 +1,15 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import NomineeModel from '../models';
 import NomineeList from '../components/nominee-list';
+import { connect } from 'redux-bundler-react';
 
-class NomineeListContainer extends React.Component {
+const NomineeListContainer = (props) => {
 
-  render() {
-    return (
-      <NomineeList {...this.props} />
-    );
-  }
+  return (
+    <NomineeList {...props} />
+  );
 
 }
 
-NomineeListContainer.propTypes = {
-  nominees: PropTypes.arrayOf(NomineeModel).isRequired,
-  selectedKey: PropTypes.string,
-  onNomineeClicked: PropTypes.func.isRequired
-};
-
-export default NomineeListContainer;
+export default connect(
+  NomineeListContainer
+);

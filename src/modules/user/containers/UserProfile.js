@@ -1,57 +1,19 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
+import React from 'react';
+import { connect } from 'redux-bundler-react';
 import UserProfile from '../components/UserProfile';
 import Login from '../components/Login';
-import UserModel from '../models';
-import store from '../../../store';
-import { auth, provider } from '../../../firebase';
-import { userDidLogin, userDidLogout, userLogoutFailed } from "../actions";
 
-class UserProfileContainer extends Component {
+const UserProfileContainer = ({ userData, doLoginUser, doLogoutUser }) => {
 
-  static onLoginClicked(evt) {
-    evt.preventDefault();
-    auth.signInWithRedirect(provider);
+  if (userData) {
+    return ( <UserProfile user={userData} onLogoutClicked={doLogoutUser} /> );
   }
-
-  static onLogoutClicked() {
-    auth.signOut().then(function() {
-      store.dispatch(userDidLogout());
-    }).catch(function() {
-      store.dispatch(userLogoutFailed());
-    });
-  }
-
-  componentDidMount() {
-    auth.onAuthStateChanged(function(user) {
-      if (user) {
-        store.dispatch(userDidLogin({
-          user
-        }));
-      } else {
-        store.dispatch(userDidLogout());
-      }
-    });
-  }
-
-  render() {
-    if (this.props.user) {
-      return ( <UserProfile {...this.props} onLogoutClicked={UserProfileContainer.onLogoutClicked} /> );
-    }
-    return ( <Login { ...this.props } onLoginClicked={UserProfileContainer.onLoginClicked} /> );
-  }
+  return ( <Login onLoginClicked={doLoginUser} /> );
 }
 
-UserProfileContainer.propTypes = {
-  user: UserModel
-};
-
-const mapStateToProps = (store) => {
-  return {
-    user: store.userState.user
-  };
-};
-
 export default connect(
-  mapStateToProps
-)(UserProfileContainer);
+  'selectUserData',
+  'doLoginUser',
+  'doLogoutUser',
+  UserProfileContainer
+)

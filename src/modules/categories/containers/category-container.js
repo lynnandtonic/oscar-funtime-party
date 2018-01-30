@@ -1,48 +1,27 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
+import { connect } from 'redux-bundler-react';
 import Category from '../components/category';
-import CategoryModel from '../models';
-import NomineeModel from '../../nominees/models';
-import { categoryWinnerSelected } from '../actions';
-import store from '../../../store';
 
-class CategoryContainer extends React.Component {
+const CategoryContainer = ({ category, nominees, doSelectCategoryWinner }) => {
 
-  static onNomineeClicked(category, nomineeId) {
-    store.dispatch(categoryWinnerSelected({
-      [category.id]: nomineeId
-    }));
-  }
+  if (nominees === null) return null;
 
-  render() {
-    let nomineeKeys = Object.keys(this.props.category.nominees);
-    let nominees = nomineeKeys.reduce((aggregator, key) => {
-      if (this.props.nominees[key]) {
-        aggregator.push(this.props.nominees[key]);
-      }
-      return aggregator;
-    }, []);
-    return (
-      <Category { ...this.props } nominees={nominees} onNomineeClicked={ CategoryContainer.onNomineeClicked } />
-    );
-  }
+  let nomineeKeys = Object.keys(nominees);
+  let categoryNominees = nomineeKeys.reduce((aggregator, key) => {
+    if (category.nominees[key]) {
+      aggregator.push(nominees[key]);
+    }
+    return aggregator;
+  }, []);
+
+  return (
+    <Category category={category} nominees={categoryNominees} onNomineeClicked={ doSelectCategoryWinner } />
+  );
 
 }
 
-CategoryContainer.propTypes = {
-  category: CategoryModel,
-  selectedKey: PropTypes.string,
-  nominees: PropTypes.objectOf(NomineeModel).isRequired,
-};
-
-const mapStateToProps = (store, ownProps) => {
-  return {
-    selectedKey: store.categoryState.selections[ownProps.category.id],
-    nominees: store.nomineeState.nominees
-  };
-};
-
 export default connect(
-  mapStateToProps
-)(CategoryContainer);
+  'selectNominees',
+  'doSelectCategoryWinner',
+  CategoryContainer
+);

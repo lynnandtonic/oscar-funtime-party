@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import getStore from './bundles'
 import { Provider } from 'react-redux';
 import { BrowserRouter, Route } from 'react-router-dom';
-import store from './store';
+// import store from './store';
 
 import MainLayout from './layouts/main';
 
 import './index.css';
 
-const App = props => (
+const App = (store) => (
   <Provider store={store}>
     <BrowserRouter>
       <Route path="/" component={MainLayout} />
@@ -16,4 +17,4 @@ const App = props => (
   </Provider>
 );
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(App(getStore()), document.getElementById('root'));
