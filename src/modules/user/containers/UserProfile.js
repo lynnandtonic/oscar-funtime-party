@@ -4,17 +4,18 @@ import UserProfile from '../components/UserProfile';
 import Login from '../components/Login';
 import UserModel from '../models';
 import store from '../../../store';
-import firebase, { provider } from '../../../firebase';
+import { auth, provider } from '../../../firebase';
 import { userDidLogin, userDidLogout, userLogoutFailed } from "../actions";
 
 class UserProfileContainer extends Component {
 
-  static onLoginClicked() {
-    firebase.auth().signInWithRedirect(provider);
+  static onLoginClicked(evt) {
+    evt.preventDefault();
+    auth.signInWithRedirect(provider);
   }
 
   static onLogoutClicked() {
-    firebase.auth().signOut().then(function() {
+    auth.signOut().then(function() {
       store.dispatch(userDidLogout());
     }).catch(function() {
       store.dispatch(userLogoutFailed());
@@ -22,7 +23,7 @@ class UserProfileContainer extends Component {
   }
 
   componentDidMount() {
-    firebase.auth().onAuthStateChanged(function(user) {
+    auth.onAuthStateChanged(function(user) {
       if (user) {
         store.dispatch(userDidLogin({
           user
