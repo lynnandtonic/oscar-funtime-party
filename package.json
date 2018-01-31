@@ -3,10 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "react-scripts": "0.8.5"
+    "react-scripts": "0.8.5",
+    "stylus": "^0.54.5"
   },
   "dependencies": {
     "firebase": "^4.8.2",
+    "npm-run-all": "^4.1.2",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
@@ -20,8 +22,13 @@
     "redux-thunk": "^2.1.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build-css": "mkdir -p build/css && stylus < src/css/main.styl -c -I src/css 1> build/css/main.css",
+    "start-css": "mkdir -p public/css && stylus --sourcemap --watch src/css/main.styl --out public/css/main.css",
+    "start-js": "react-scripts start",
+    "build-js": "react-scripts build",
+    "clean": "rm -rf build",
+    "start": "npm-run-all -p start-css start-js",
+    "build": "npm-run-all clean build-css build-js",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }

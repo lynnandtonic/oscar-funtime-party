@@ -8,3 +8,6 @@ oscarfuntime.party
 ## Run
 ```nvm use```
 ```yarn start```
+
+## Build
+```yarn build```
