@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'redux-bundler-react';
 import Category from '../components/category';
 
-const CategoryContainer = ({ category, nominees, doSelectCategoryWinner }) => {
+const CategoryContainer = ({ category, selections, nominees, doSelectCategoryWinner }) => {
 
   if (nominees === null) return null;
 
@@ -13,15 +13,17 @@ const CategoryContainer = ({ category, nominees, doSelectCategoryWinner }) => {
     }
     return aggregator;
   }, []);
+  let selectedNomineeId = selections ? selections[category.id] : null;
 
   return (
-    <Category category={category} nominees={categoryNominees} onNomineeClicked={ doSelectCategoryWinner } />
+    <Category category={category} selectedKey={selectedNomineeId} nominees={categoryNominees} onNomineeClicked={ doSelectCategoryWinner } />
   );
 
 }
 
 export default connect(
   'selectNominees',
+  'selectSelections',
   'doSelectCategoryWinner',
   CategoryContainer
 );

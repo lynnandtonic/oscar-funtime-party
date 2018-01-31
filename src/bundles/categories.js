@@ -20,15 +20,10 @@ export default {
           return { ...state, isLoading: true };
         case GET_CATEGORIES_SUCCESS:
           return { ...state, isLoading: false, data: { ...state.categories, ...payload } };
-        case CATEGORY_WINNER_WAS_CHOSEN:
-          return { ...state, isLoading: false, data: { ...state.selections, ...payload } };
         default:
           return state;
       }
     }
-  },
-  doSelectCategoryWinner: (category, nomineeId) => ({ dispatch }) => {
-    dispatch({ type: CATEGORY_WINNER_WAS_CHOSEN, payload: { category, nomineeId }});
   },
   doFetchCategories: () => ({ dispatch }) => {
     dispatch({ type: GET_CATEGORIES });
