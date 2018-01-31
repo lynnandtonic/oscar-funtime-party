@@ -11,7 +11,8 @@ export default {
   getReducer: () => {
     const initialData = {
       data: null,
-      isLoading: false
+      isLoading: false,
+      isAnonymous: false
     };
 
     return (state = initialData, { type, payload }) => {
@@ -21,7 +22,7 @@ export default {
         case USER_DID_LOGIN:
           return { ...state, isLoading: false, data: payload };
         case USER_DID_LOGOUT:
-          return { ...state, isLoading: false, data: null };
+          return { ...state, isLoading: false, data: null, isAnonymous: true };
         case USER_LOGOUT_FAILED:
           return state; // TODO: handle this failure
         default:
@@ -59,7 +60,7 @@ export default {
   reactInitiateLogin: createSelector(
     'selectUserRaw',
     (userRaw) => {
-      if (userRaw.isLoading || userRaw.data) {
+      if (userRaw.isLoading || userRaw.data || userRaw.isAnonymous) {
         return false;
       }
       return { actionCreator: 'doInitiateLogin' }

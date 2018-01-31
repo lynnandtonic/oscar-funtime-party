@@ -1,5 +1,6 @@
 import { createSelector } from 'redux-bundler';
 import firebase from 'firebase';
+import { USER_DID_LOGOUT } from './user';
 
 export const SELECTION_WAS_MADE = 'SELECTION_WAS_MADE';
 export const SELECTION_SAVE_SUCCESS = 'SELECTION_SAVE_SUCCESS';
@@ -30,6 +31,8 @@ export default {
           let selections = state.data || {};
           let newSelections = { ...selections, ...selection };
           return { ...state, data: newSelections };
+        case USER_DID_LOGOUT:
+          return { ...state, data: null };
         default:
           return state;
       }
