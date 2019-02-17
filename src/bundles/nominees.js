@@ -1,5 +1,5 @@
 import { createSelector } from 'redux-bundler';
-import firebase from 'firebase';
+import firebase from '../firebase';
 
 export const GET_NOMINEES = 'GET_NOMINEES';
 export const GET_NOMINEES_SUCCESS = 'GET_NOMINEES_SUCCESS';

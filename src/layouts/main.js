@@ -5,7 +5,6 @@ import ScoreSheetPage from '../pages/ScoreSheet';
 import UserProfile from '../modules/user/containers/UserProfile';
 
 const MainLayout = () => (
-
   <div className="app">
     <section className="nav-main">
       <UserProfile />
@@ -23,7 +22,6 @@ const MainLayout = () => (
       <Redirect to="/" />
     </Switch>
   </div>
-
 );
 
 export default MainLayout

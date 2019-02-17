@@ -1,5 +1,5 @@
 import { createSelector } from 'redux-bundler';
-import firebase from 'firebase';
+import firebase from '../firebase';
 
 export const GET_CATEGORIES = 'GET_CATEGORIES';
 export const GET_CATEGORIES_SUCCESS = 'GET_CATEGORIES_SUCCESS';

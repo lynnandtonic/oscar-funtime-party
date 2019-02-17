@@ -1,20 +1,18 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
 import getStore from './bundles'
-import { Provider } from 'react-redux';
-import { BrowserRouter, Route } from 'react-router-dom';
-// import store from './store';
+import { Provider } from 'redux-bundler-react';
+import { BrowserRouter } from 'react-router-dom';
 
 import MainLayout from './layouts/main';
 
 import './index.css';
 
-const App = (store) => (
-  <Provider store={store}>
+render(
+  <Provider store={getStore()}>
     <BrowserRouter>
-      <Route path="/" component={MainLayout} />
+      <MainLayout />
     </BrowserRouter>
-  </Provider>
+  </Provider>,
+  document.getElementById('root')
 );
-
-ReactDOM.render(App(getStore()), document.getElementById('root'));

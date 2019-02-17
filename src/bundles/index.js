@@ -1,4 +1,4 @@
-import { composeBundles, cachingBundle } from 'redux-bundler';
+import { composeBundles, createCacheBundle } from 'redux-bundler';
 import categories from './categories';
 import nominees from './nominees';
 import selections from './selections';
@@ -9,5 +9,5 @@ export default composeBundles(
   categories,
   nominees,
   selections,
-  cachingBundle({version: 1})
+  createCacheBundle({version: 1})
 );

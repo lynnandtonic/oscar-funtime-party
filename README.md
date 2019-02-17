@@ -2,12 +2,11 @@ oscarfuntime.party
 ======
 
 ## Dependencies
-* Install [Yarn](https://yarnpkg.com/en/docs/install)
-* Install node_modules via ```yarn```
+* Install node_modules via ```npm ci```
 
 ## Run
 ```nvm use```
-```yarn start```
+```npm start```
 
 ## Build
-```yarn build```
+```npm build```
